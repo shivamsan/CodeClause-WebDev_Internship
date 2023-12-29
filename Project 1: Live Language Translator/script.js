@@ -93,3 +93,9 @@ inputTextElem.addEventListener("input", (e) => {
   }
   translate();
 });
+
+const inputChars = document.querySelector("#input-chars");
+
+inputTextElem.addEventListener("input", (e) => {
+  inputChars.innerHTML = inputTextElem.value.length;
+});
